@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    margin-left: 10px;
+    padding: 0px;
+    display: flex;
+    height: 100vh;
+    
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: backgroundimage 20s linear infinite;
+}
+
+@keyframes backgroundimage{
+    0%,100%{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(1.jpeg);
+    }
+    15%{
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(2.jpeg);
+  
+    }
+    30%{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(3.jpeg);
+        
+    }
+    45%{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(4.jpg);
+        
+    }
+    60%{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(5.jpeg);
+        
+    }
+    75%{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(6.jpeg);
+        
+    }
+    90%{
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(2.jpeg);
+        
+    }
+}
+
+#logo{
+    position: absolute;
+    margin-right: auto;
+    padding-top:5px;
+    left:10%;
+    top: 5%;
+    color: #fff;
+        text-shadow: 0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff,
+                     0 0 200px #00b3ff,
+                     0 0 300px #00b3ff;
+    float: left;
+    display: flex;
+    
+    font-size: 50px;
+    line-height: 45px;
+}
+#signup{
+    position: absolute;
+    background: rgba(23,21,41,0.0);
+    
+    width: 400px;
+    height: 550px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: transparency 2s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#signup h1{
+    position:absolute;
+    font-size: 4em;
+    display: inline-block;
+    padding-top:20px;
+    margin-left: 120px;
+    top: -500px;
+    font-family: cursive;
+    font-style: italic;
+    color: #dee;
+    text-shadow:0 0 10px #00b3ff;
+    animation: login 3s ease-out ;
+    animation-fill-mode: forwards;
+    
+ }
+
+@keyframes login{
+    0%{
+            top: -500px;
+
+    }
+    100%{
+        position: absolute;
+        left:0%;
+        top: 5%;
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes transparency{
+    0%{
+    background: rgba(23,21,255,0.0);
+    box-shadow: none;
+    }
+    100%{
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px #333;
+    }
+}
+#signup form{
+    position:absolute;   
+    display: inline-block;
+    padding-top:80px;
+    margin-left: 20px;
+    left: -2000px;
+    animation: form 3s ease-out ;
+    animation-fill-mode: forwards;
+    
+    
+}
+
+@keyframes form{
+    0%{
+            left: -1000px;
+
+    }
+    100%{
+        position: absolute;
+        left:2%;
+        top: 8%;
+    }
+}
+#signup form label{
+    font-size: 1.4em;
+    font-family: serif;
+    font-style: italic;
+    color: #fff;
+    
+}
+#signup form input[type="text"],input[type="email"],input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #00b3ff;
+    background-color: transparent;
+    width: 300px;
+    height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 4px;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #dee;
+    align-content: space-between;
+    transition: all 0.5s;
+}
+#signup form input[type=text]:focus,#signup form input[type=text]:hover ,input[type=email]:focus,input[type=email]:hover ,input[type=password]:focus,input[type=password]:hover{
+    margin-top: 5px;
+    padding-left: 10px;
+    border: 2px solid #00b3ff;
+    outline: none;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    box-shadow: 0 0 5px grey;
+}
+#submit{
+    float: right;
+    color: #00b3ff;
+    background: #cdd ;
+    font-size:18px;
+    font-family: cursive;
+    font-weight: 700;
+    padding: 5px 25px;
+    transition:all 0.4s ease;
+}
+#submit:hover{
+    color: #ddd;
+    background: #56A5EC;
+    font-size:19px;
+    box-shadow: 0 0 10px #82CAFA;
+    font-family: cursive;
+    font-weight: 700;
+    padding: 6px 27px;
+    box-shadow: 0 0 10px #bcc;
+    
+}
